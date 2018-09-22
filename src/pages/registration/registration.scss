@@ -1,0 +1,27 @@
+page-registration {
+
+    img {
+        margin: 0 auto;
+        display: block;
+        height: 50%;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .item-input .label-md, .item-select .label-md, .item-datetime .label-md {
+        color: black;
+    }
+
+    .button {
+        margin: 3% 3% 0% 10%;
+        display: block;
+        float: left;
+        width: 10rem;
+    }
+
+    div {
+        margin-top: 3%;
+    }
+}
