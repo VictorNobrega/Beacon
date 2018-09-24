@@ -1,34 +1,42 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Visita Guiada</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
 <ion-content>
   <ion-list no-lines>
 
-    <ion-icon *ngIf="!beacons"  name="search"></ion-icon>
+    <ion-icon name="search"></ion-icon>
 
-    <div *ngIf="beacons">
-    <ion-item *ngFor="let beacon of beacons">
-      <ion-grid>
-        <ion-row>
-          <ion-col>Major</ion-col>
-          <ion-col>{{beacon.major}}</ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col>Minor</ion-col>
-          <ion-col>{{beacon.minor}}</ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col>RSSI</ion-col>
-          <ion-col>{{beacon.rssi}}</ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col>Accuracy</ion-col>
-          <ion-col>{{beacon.accuracy}}</ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col>uuid</ion-col>
-          <ion-col>{{beacon.uuid}}</ion-col>
-        </ion-row>
-      </ion-grid>
-    </ion-item>
-  </div>
+    <div>
+      <ion-item *ngFor="let beacon of beacons">
+        <ion-grid>
+          <ion-row>
+            <ion-col>Major</ion-col>
+            <ion-col>{{beacon.major}}</ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>Minor</ion-col>
+            <ion-col>{{beacon.minor}}</ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>RSSI</ion-col>
+            <ion-col>{{beacon.rssi}}</ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>Accuracy</ion-col>
+            <ion-col>{{beacon.accuracy}}</ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>uuid</ion-col>
+            <ion-col>{{beacon.uuid}}</ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-item>
+    </div>
 
   </ion-list>
 </ion-content>
