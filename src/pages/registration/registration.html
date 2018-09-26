@@ -10,29 +10,29 @@
 
   <h1>Registro de Visitantes</h1>
 
-  <ion-item>
-    <ion-label>Nome</ion-label>
+  <ion-item no-lines>
+    <!-- <ion-label>Nome</ion-label> -->
     <ion-input type="text" placeholder="Nome"></ion-input>
   </ion-item>
-  <ion-item>
-    <ion-label>Email</ion-label>
+  <ion-item no-lines>
+    <!-- <ion-label>Email</ion-label> -->
     <ion-input type="email" placeholder="Email"></ion-input>
   </ion-item>
-  <ion-item>
-    <ion-label>Telefone</ion-label>
+  <ion-item no-lines>
+    <!-- <ion-label>Telefone</ion-label> -->
     <ion-input type="tel" placeholder="Telefone"></ion-input>
   </ion-item>
-  <ion-item>
-    <ion-label>Estado</ion-label>
+  <ion-item no-lines>
+    <!-- <ion-label>Estado</ion-label> -->
     <ion-input type="text" placeholder="Estado"></ion-input>
   </ion-item>
-  <ion-item>
-    <ion-label>Cidade</ion-label>
+  <ion-item no-lines>
+    <!-- <ion-label>Cidade</ion-label> -->
     <ion-input type="text" placeholder="Cidade"></ion-input>
   </ion-item>
 
-  <button ion-button color="secondary">Cadastrar</button>
-  <button ion-button color="danger">Pular</button>
+  <button ion-button color="secondary" (click)="goToMain()">Cadastrar</button>
+  <button ion-button color="danger" (click)="goToMain()">Pular</button>
 
   <div></div>
 

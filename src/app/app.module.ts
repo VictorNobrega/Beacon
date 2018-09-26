@@ -7,7 +7,6 @@ import { MyApp } from './app.component';
 import { AboutPage } from '../pages/about/about';
 import { HoursPage } from '../pages/hours/hours';
 import { HomePage } from '../pages/home/home';
-import { TabsPage } from '../pages/tabs/tabs';
 import { RegistrationPage } from '../pages/registration/registration';
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -16,6 +15,7 @@ import { IBeacon } from '@ionic-native/ibeacon';
 import { MenuPage } from '../pages/menu/menu';
 import { HistoryPage } from '../pages/history/history';
 import { MainPage } from '../pages/main/main';
+import { EventsPage } from '../pages/events/events';
 
 @NgModule({
   declarations: [
@@ -23,11 +23,11 @@ import { MainPage } from '../pages/main/main';
     AboutPage,
     HoursPage,
     HomePage,
-    TabsPage,
     RegistrationPage,
     MenuPage,
     HistoryPage,
-    MainPage
+    MainPage,
+    EventsPage
   ],
   imports: [
     BrowserModule,
@@ -39,11 +39,11 @@ import { MainPage } from '../pages/main/main';
     AboutPage,
     HoursPage,
     HomePage,
-    TabsPage,
     RegistrationPage,
     MenuPage,
     HistoryPage,
-    MainPage
+    MainPage,
+    EventsPage
   ],
   providers: [
     IBeacon,
