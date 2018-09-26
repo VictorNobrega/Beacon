@@ -1,9 +1,14 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+    My Beacons
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
 <ion-content>
   <ion-list no-lines>
 
-    <ion-icon *ngIf="!beacons"  name="search"></ion-icon>
-
-    <div *ngIf="beacons">
     <ion-item *ngFor="let beacon of beacons">
       <ion-grid>
         <ion-row>
@@ -28,7 +33,6 @@
         </ion-row>
       </ion-grid>
     </ion-item>
-  </div>
 
   </ion-list>
 </ion-content>
