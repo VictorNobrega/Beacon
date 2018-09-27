@@ -3,7 +3,6 @@ import { Platform, Events } from 'ionic-angular';
 import { IBeacon } from '@ionic-native/ibeacon';
 /*
 Generated class for the BeaconProvider provider.
-
 See https://angular.io/docs/ts/latest/guide/dependency-injection.html
 for more info on providers and Angular 2 DI.
 */

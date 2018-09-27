@@ -9,32 +9,26 @@
 <ion-content>
   <ion-list no-lines>
 
-    <ion-icon name="search"></ion-icon>
+    <ion-icon name="search" *ngIf="!condition"></ion-icon>
 
-    <div>
+    <div *ngIf="condition">
       <ion-item *ngFor="let beacon of beacons">
-        <ion-grid>
+        <ion-grid class="back">
           <ion-row>
-            <ion-col>Major</ion-col>
-            <ion-col>{{beacon.major}}</ion-col>
+            <ion-col>Identificador</ion-col>
+            <ion-col col-12 col-sm>{{beacon.uuid}}</ion-col>
           </ion-row>
+          <hr>
           <ion-row>
-            <ion-col>Minor</ion-col>
-            <ion-col>{{beacon.minor}}</ion-col>
-          </ion-row>
-          <ion-row>
-            <ion-col>RSSI</ion-col>
+            <ion-col>Força de sinal</ion-col>
             <ion-col>{{beacon.rssi}}</ion-col>
           </ion-row>
           <ion-row>
-            <ion-col>Accuracy</ion-col>
+            <ion-col>Proximidade</ion-col>
             <ion-col>{{beacon.accuracy}}</ion-col>
           </ion-row>
-          <ion-row>
-            <ion-col>uuid</ion-col>
-            <ion-col>{{beacon.uuid}}</ion-col>
-          </ion-row>
         </ion-grid>
+        <hr>
       </ion-item>
     </div>
 
