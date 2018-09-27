@@ -1,29 +1,42 @@
 <ion-content padding>
 
-  <img src="../../assets/imgs/logo-museu.png" alt="">
+  <img class="logo" src="../../assets/imgs/logo-museu.png" alt="">
+
   <ion-grid>
     <ion-row>
       <ion-col col-6>
-        <ion-icon name="search" (click)="goToHome()"></ion-icon>
+        <button (click)="goToHome()">
+          <img class="botao" src='../../assets/imgs/guide.svg'>
+        </button>
       </ion-col>
       <ion-col col-6>
-        <ion-icon name="images" (click)="goToMain()"></ion-icon>
-      </ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col col-6>
-        <ion-icon name="book" (click)="goToHistory()"></ion-icon>
-      </ion-col>
-      <ion-col col-6>
-        <ion-icon name="clock" (click)="goToHours()"></ion-icon>
+        <button (click)="goToMain()">
+          <img class="botao" src='../../assets/imgs/main.svg'>
+        </button>
       </ion-col>
     </ion-row>
     <ion-row>
       <ion-col col-6>
-        <ion-icon name="people" (click)="goToEvents()"></ion-icon>
+        <button (click)="goToHistory()">
+          <img class="botao" src='../../assets/imgs/history.svg'>
+        </button>
       </ion-col>
       <ion-col col-6>
-        <ion-icon name="information-circle" (click)="goToAbout()"></ion-icon>
+        <button (click)="goToHours()">
+          <img class="botao" src='../../assets/imgs/clock.svg'>
+        </button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-6>
+        <button (click)="goToEvents()">
+          <img class="botao" src='../../assets/imgs/event.svg'>
+        </button>
+      </ion-col>
+      <ion-col col-6>
+        <button (click)="goToAbout()">
+          <img class="botao" src='../../assets/imgs/about-us.svg'>
+        </button>
       </ion-col>
     </ion-row>
   </ion-grid>
